@@ -1,0 +1,603 @@
+@import url('htttps;//fonts.googleapis.com/css?faily=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0, 1);
+}
+.container .left-side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.personalInfo {
+    padding-top: 40px; 
+    margin-top: -10px; 
+}
+
+.title {
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    background-color: lightblue; 
+    padding: 4px 41px; 
+    display: inline-block; 
+}
+.title ul{
+    position: relative;
+}
+.personalInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 14px;
+}
+.personalInfo ul li span.label {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.personalInfo ul li span.value {
+    float: right;
+}
+.skillInfo .title {
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 630;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: lightblue;
+    padding: 5px 87px;
+    display: inline-block;
+    font-size: 20px;
+}
+.skillInfo ul {
+    position: relative;
+    list-style-type: none;
+}
+.skillInfo ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.skillInfo ul li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #fff; 
+}
+.skillInfo ul li .text {
+    margin: 0;
+    color: #fff;
+    font-size: 10px;
+}
+.contactInfo .title {
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: lightblue;
+    padding: 5px 75px;
+    display: inline-block;
+    font-size: 20px;
+}
+.contactInfo ul {
+    position: relative;
+}
+.contactInfo ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: pointer;  
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li .text {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+.languageInfo .title {
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: lightblue;
+    padding: 5px 57px;
+    display: inline-block;
+    font-size: 20px;
+}
+.languageInfo ul {
+    position: relative;
+}
+.languageInfo ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: pointer;  
+}
+.languageInfo ul li .text {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    margin-left: -10px;
+}
+.languageInfo ul li .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.languageInfo ul li .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+/* --professional skills-- */
+.professionalInfo .title1 {
+    color: #023047;
+    text-transform: uppercase;
+    font-weight: 798;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: lightblue;
+    padding: 12px 56px;
+    display: inline-block;
+    font-size: 10px;
+}
+.professionalInfo ul {
+    position: relative;
+}
+.professionalInfo ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: pointer;  
+}
+.professionalInfo ul li .text {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    margin-left: -10px;
+}
+.professionalInfo ul li .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.professionalInfo ul li .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+/* ------RIGHT-SIDE--------- */
+.container2 .right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    text-align: right;
+}
+
+.about {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: lightblue;
+    padding: 5px 153px;
+    display: inline-block;
+}
+
+.about p {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+p {
+    color: #333;
+}
+
+.educationInfo .title3 {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    background-color: lightblue;
+    padding: 5px 103px;
+    display: inline-block;
+}
+
+.educationInfo .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.educationInfo .box .year_school {
+    min-width: 150px;
+}
+
+.educationInfo .box .year_school h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.educationInfo .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    text-align: left; 
+    margin-left: 50px;
+}
+.educationInfo .box .text h5 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 11px;
+    text-align: left; 
+    margin-left: 50px;
+}
+.educationInfo .box .text h6 {
+    font-size: 8px;
+    text-align: left; 
+    margin-left: 50px;
+}
+/* organizations! */
+.organizationInfo .title5 {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: auto;
+    background-color: lightblue;
+    padding: 6px 186px;
+    display: inline-block;
+}
+.organizationInfo .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    text-align: left;
+}
+.organizationInfo .box .year_school {
+    min-width: 150px;
+}
+.organizationInfo .box .year_org h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.organizationInfo .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    text-align: left; 
+    margin-left: 75px;
+}
+.organizationInfo .box .text h6 {
+    font-size: 8px;
+    text-align: left; 
+    margin-left: 75px;
+}
+/* seminars! */
+.seminarInfo .title6 {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: auto;
+    background-color: lightblue;
+    padding: 6px 225px;
+    display: inline-block;
+}
+.seminarInfo .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    text-align: left;
+}
+.seminarInfo .box .year_school {
+    min-width: 150px;
+}
+.seminarInfo .box .year_sem h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.seminarInfo .box .text h4 {
+    color: black;
+    font-size: 14px;
+    text-align: left; 
+    margin-left: 80px;
+}
+/* achievement! */
+.achieveInfo .title6 {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 618;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: auto;
+    background-color: lightblue;
+    padding: 6px 200px;
+    display: inline-block;
+}
+.achieveInfo .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    text-align: left;
+}
+.achieveInfo .box .year_school {
+    min-width: 150px;
+}
+.achieveInfo .box .year_sem h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.achieveInfo .box .text h4 {
+    color: #2a7da2;
+    font-size: 17px;
+    text-align: left; 
+    margin-left: 73px;
+}
+.achieveInfo .box .text h6 {
+    font-size: 11px;
+    text-align: left; 
+    margin-left: 73px;
+}
+
+@media (max-width: 1000px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title {
+       padding: 4px 248px; 
+    }
+    .skillInfo .title {
+        padding: 5px 295px;
+    }
+    .contactInfo .title {
+        padding: 5px 282px;
+    }
+    .languageInfo .title {
+        padding: 5px 264px;
+    }
+    .professionalInfo .title1 {
+        padding: 12px 265px;
+    }  
+    .title2 {
+        padding: 5px 190px;
+    }
+    .educationInfo .title3 {
+        padding: 5px 138px;
+    }   
+    
+    .organizationInfo .title5 {
+        padding: 6px 218px;
+    }
+    .seminarInfo .title6 {
+        padding: 6px 255px;
+    }
+    .achieveInfo .title6 {
+        padding: 6px 230px;
+    } 
+    .personalInfo ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .personalInfo ul li {
+        flex: 0 0 50%; 
+        padding-left: 0;
+    }
+    .personalInfo ul li span.label {
+        width: 40%;
+    }
+    .personalInfo ul li span.value {
+        width: 60%; 
+    }
+    .text {
+        margin-bottom: 20px;
+    }
+    
+    .text h4 {
+        margin-bottom: 5px;
+    }
+    
+    .text h5, .text h6 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .educationInfo .box {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+        text-align: left;
+    }
+    .educationInfo .box .year_school {
+        min-width: 170px;
+    }
+    .educationInfo .box .year_school h5 {
+        text-transform: uppercase;
+        color: #848c90;
+        font-weight: 600;
+        margin-left: 30px;
+    }
+    .skillInfo ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end; 
+    }
+    .skillInfo ul li {
+        flex: 0 0 33.33%;
+    }
+    .skillInfo ul li .text {
+        font-weight: bold;
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+    }
+    .contactInfo ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end; 
+    }
+    .contactInfo ul li {
+        flex: 0 0 33.33%;
+    }
+    .contactInfo ul li .icon{
+        display: inline-block;
+        width: 30px;
+        font-size: 18px;
+        color: #03a9f4;
+    }
+    .contactInfo ul li .text {
+        margin: 0;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    @media (max-width: 600px) {
+        .educationInfo .box,
+        .organizationInfo .box,
+        .seminarInfo .box,
+        .achieveInfo .box {
+            flex-direction: column; 
+        }
+    
+        .educationInfo .box .year_school,
+        .organizationInfo .box .year_school,
+        .seminarInfo .box .year_school,
+        .achieveInfo .box .year_school {
+            min-width: unset;
+            margin-left: 0; 
+            margin-bottom: 10px; 
+        }
+    
+        .educationInfo .box .text h4,
+        .educationInfo .box .text h5,
+        .educationInfo .box .text h6,
+        .organizationInfo .box .text h4,
+        .organizationInfo .box .text h5,
+        .organizationInfo .box .text h6,
+        .seminarInfo .box .text h4,
+        .seminarInfo .box .text h5,
+        .seminarInfo .box .text h6,
+        .achieveInfo .box .text h4,
+        .achieveInfo .box .text h5,
+        .achieveInfo .box .text h6 {
+            margin-left: 32px;
+        }
+    }
+    
+}
